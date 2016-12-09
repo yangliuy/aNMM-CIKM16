@@ -1,6 +1,6 @@
 # aNMM-CIKM16
 
-Open Source Implementation of Attention-Based Neural Matching Model
+Open Source Code of Attention-Based Neural Matching Model
 ====================================================================
 
 /**
