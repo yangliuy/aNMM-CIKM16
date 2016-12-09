@@ -23,6 +23,7 @@ Brief Introduction
 2. This package implements the aNMM-1 and aNMM-2 model proposed in the following paper: Liu Yang, Qingyao Ai, Jiafeng Guo, W. Bruce Croft, aNMM: Ranking Short Answer Texts with Attention-Based Neural Matching Model, In Proceedings of the 25th ACM International Conference on Information and Knowledge Management (CIKM 2016), Indianapolis, IN, USA. October 24-28, 2016. Full Paper. (https://ciir-publications.cs.umass.edu/pub/web/getpdf.php?id=1240 or http://dl.acm.org/citation.cfm?id=2983818) . If you use this code, please cite this paper.
 
 3. How to run
+
   3.1 Run with Jar files
 
   3.2 Run by importing this project into Eclipse
