@@ -1,0 +1,132 @@
+create path : data/TRECQA/ModelRes/output_v41_anmm1/
+runModelType: Validation
+termToWordVectorMap size: 218317
+current read doc: data/TRECQA/ModelInputData/train-less-than-40.manual-edit.qsent
+current read doc: data/TRECQA/ModelInputData/dev-less-than-40.manual-edit.qsent
+output word index done!
+total number of QA sent pairs in training data: 4715
+total number of QA sent pairs in testing data: 1147
+total number of QA triples in training data: 47845
+total number of QA triples in testing data: 4392
+Iteration/Epoch 1
+Test1 Time: 2016-12-09 15:07:33
+Current loss on training data: 46035.6151296588
+Test2 Time: 2016-12-09 15:07:34
+Finish batch 1, update model parameters
+Finish batch 2, update model parameters
+Finish batch 3, update model parameters
+Finish batch 4, update model parameters
+Finish batch 5, update model parameters
+Finish batch 6, update model parameters
+Finish batch 7, update model parameters
+Finish batch 8, update model parameters
+Finish batch 9, update model parameters
+Finish batch 10, update model parameters
+Finish batch 11, update model parameters
+Finish batch 12, update model parameters
+Finish batch 13, update model parameters
+Finish batch 14, update model parameters
+Finish batch 15, update model parameters
+Finish batch 16, update model parameters
+Finish batch 17, update model parameters
+Finish batch 18, update model parameters
+Finish batch 19, update model parameters
+Finish batch 20, update model parameters
+Finish batch 21, update model parameters
+Finish batch 22, update model parameters
+Finish batch 23, update model parameters
+Finish batch 24, update model parameters
+Finish batch 25, update model parameters
+Finish batch 26, update model parameters
+Finish batch 27, update model parameters
+Finish batch 28, update model parameters
+Finish batch 29, update model parameters
+Finish batch 30, update model parameters
+Finish batch 31, update model parameters
+Finish batch 32, update model parameters
+Finish batch 33, update model parameters
+Finish batch 34, update model parameters
+Finish batch 35, update model parameters
+Finish batch 36, update model parameters
+Finish batch 37, update model parameters
+Finish batch 38, update model parameters
+Finish batch 39, update model parameters
+Finish batch 40, update model parameters
+Finish batch 41, update model parameters
+Finish batch 42, update model parameters
+Finish batch 43, update model parameters
+Finish batch 44, update model parameters
+Finish batch 45, update model parameters
+Finish batch 46, update model parameters
+Finish batch 47, update model parameters
+Finish the last batch, update model parameters
+Finish one Epoch!
+After scan all the triples, wkChangeSumSquare = 299.6152736347496
+After scan all the triples, vpChangeSumSquare = 156.93927404087347
+Iteration/Epoch 2
+Test1 Time: 2016-12-09 15:10:20
+Current loss on training data: 17977.519661668553
+Current loss on validation/dev data: 3637.728969222303
+Test2 Time: 2016-12-09 15:10:22
+Finish batch 1, update model parameters
+Finish batch 2, update model parameters
+Finish batch 3, update model parameters
+Finish batch 4, update model parameters
+Finish batch 5, update model parameters
+Finish batch 6, update model parameters
+Finish batch 7, update model parameters
+Finish batch 8, update model parameters
+Finish batch 9, update model parameters
+Finish batch 10, update model parameters
+Finish batch 11, update model parameters
+Finish batch 12, update model parameters
+Finish batch 13, update model parameters
+Finish batch 14, update model parameters
+Finish batch 15, update model parameters
+Finish batch 16, update model parameters
+Finish batch 17, update model parameters
+Finish batch 18, update model parameters
+Finish batch 19, update model parameters
+Finish batch 20, update model parameters
+Finish batch 21, update model parameters
+Finish batch 22, update model parameters
+Finish batch 23, update model parameters
+Finish batch 24, update model parameters
+Finish batch 25, update model parameters
+Finish batch 26, update model parameters
+Finish batch 27, update model parameters
+Finish batch 28, update model parameters
+Finish batch 29, update model parameters
+Finish batch 30, update model parameters
+Finish batch 31, update model parameters
+Finish batch 32, update model parameters
+Finish batch 33, update model parameters
+Finish batch 34, update model parameters
+Finish batch 35, update model parameters
+Finish batch 36, update model parameters
+Finish batch 37, update model parameters
+Finish batch 38, update model parameters
+Finish batch 39, update model parameters
+Finish batch 40, update model parameters
+Finish batch 41, update model parameters
+Finish batch 42, update model parameters
+Finish batch 43, update model parameters
+Finish batch 44, update model parameters
+Finish batch 45, update model parameters
+Finish batch 46, update model parameters
+Finish batch 47, update model parameters
+Finish the last batch, update model parameters
+Finish one Epoch!
+After scan all the triples, wkChangeSumSquare = 35.23044274864642
+After scan all the triples, vpChangeSumSquare = 44.33977586672522
+Iteration/Epoch 3
+Test1 Time: 2016-12-09 15:13:00
+Current loss on training data: 14421.003022897045
+Current loss on validation/dev data: 3624.0323821569414
+Test2 Time: 2016-12-09 15:13:01
+Finish batch 1, update model parameters
+Finish batch 2, update model parameters
+Finish batch 3, update model parameters
+Finish batch 4, update model parameters
+Finish batch 5, update model parameters
+Finish batch 6, update model parameters
