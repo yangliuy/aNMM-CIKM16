@@ -23,7 +23,7 @@ lyang@cs.umass.edu * */
 
 # How to run
 
-  ### Run with Jar files
+### Run with Jar files
   ```
   java -jar aNMM1.jar queryFile trainFile validFile testFile preTrainedWordVecFile ModelResDataFolder dataName modelName binNum vectorDimen runModelType
   ```
@@ -56,7 +56,8 @@ lyang@cs.umass.edu * */
   	```
   	Note that you can find most of the input files under data/TRECQA/ModelInputData/. The pre-trained word embedding files are too large to be uploaded to Github (max file limit = 100 MB). You can generate the word embedding files by yourself using the tool and data (Wiki Dump) in https://code.google.com/archive/p/word2vec/ . You can also contact me to get the word embedding files I used.
 
-  ### Run by importing this project into Eclipse
+###　Run by importing this project into Eclipse
+
   The code is organized by the Eclipse IDE. You should be able to import this project into Eclipse after you clone it. This make it more convenient to read and modify the code. If you want to run it from Eclipse, you need to pass the right parameters and run aNMM1.java or aNMM2.java to start the program.
 
 # Sample output
