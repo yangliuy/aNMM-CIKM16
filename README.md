@@ -30,9 +30,9 @@ Brief Introduction
   ```
   Where
   
-  queryFile: the path of the question files. e.g. data/TRECQA/ModelInputData/trecqa.queries
-  trainFile: the path of training file. e.g. data/TRECQA/ModelInputData/train-less-than-40.manual-edit.qsent
-  validFile: the path of validation file. e.g. data/TRECQA/ModelInputData/dev-less-than-40.manual-edit.qsent
+  -queryFile: the path of the question files. e.g. data/TRECQA/ModelInputData/trecqa.queries
+  -trainFile: the path of training file. e.g. data/TRECQA/ModelInputData/train-less-than-40.manual-edit.qsent
+  -validFile: the path of validation file. e.g. data/TRECQA/ModelInputData/dev-less-than-40.manual-edit.qsent
   testFile: the path of testing file. e.g. data/TRECQA/ModelInputData/test-less-than-40.manual-edit.qsent
   preTrainedWordVecFile: the path of the pre-trained word embedding file. e.g. data/TRECQA/WordVec/wiki_skipgram_win5_dim200.vec
   ModelResDataFolder: the folder to store the model training results. e.g. data/TRECQA/ModelRes/output_v41_softmax_binw/
