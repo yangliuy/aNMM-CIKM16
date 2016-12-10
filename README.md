@@ -1,6 +1,6 @@
 # aNMM-CIKM16
 
-Implementation of Attention-Based Neural Matching Model
+#Implementation of Attention-Based Neural Matching Model
 ====================================================================
 
 /**
@@ -15,16 +15,15 @@ Liu Yang, Qingyao Ai, Jiafeng Guo, W. Bruce Croft, aNMM: Ranking Short Answer Te
 Feel free to contact the following people if you find any problems in the package.
 lyang@cs.umass.edu * */
 
-Brief Introduction
-===================
+#Introduction
 
 1. An alternative to question answering methods based on feature engineering, deep learning approaches such as convolutional neural networks (CNNs) and Long Short-Term Memory Models (LSTMs) have recently been proposed for semantic matching of questions and answers. To achieve good results, however, these models have been combined with additional features such as word overlap or BM25 scores. Without this combination, these models perform significantly worse than methods based on linguistic feature engineering. In this paper, we propose an attention based neural matching model for ranking short answer text. We adopt value-shared weighting scheme instead of position-shared weighting scheme for combining different matching signals and incorporate question term importance learning using question attention network. Using the popular benchmark TREC QA data, we show that the relatively simple aNMM model can significantly outperform other neural network models that have been used for the question answering task, and is competitive with models that are combined with additional features. When aNMM is combined with additional features, it outperforms all baselines.
 
 2. This package implements the aNMM-1 and aNMM-2 model proposed in this paper: Liu Yang, Qingyao Ai, Jiafeng Guo, W. Bruce Croft, aNMM: Ranking Short Answer Texts with Attention-Based Neural Matching Model, In CIKM 2016. (https://ciir-publications.cs.umass.edu/pub/web/getpdf.php?id=1240 or http://dl.acm.org/citation.cfm?id=2983818). If you use this code, please cite this paper.
 
-3. How to run
+# How to run
 
-  3.1 Run with Jar files
+  ### Run with Jar files
   ```
   java -jar aNMM1.jar queryFile trainFile validFile testFile preTrainedWordVecFile ModelResDataFolder dataName modelName binNum vectorDimen runModelType
   ```
@@ -57,17 +56,17 @@ Brief Introduction
   	```
   	Note that you can find most of the input files under data/TRECQA/ModelInputData/. The pre-trained word embedding files are too large to be uploaded to Github (max file limit = 100 MB). You can generate the word embedding files by yourself using the tool and data (Wiki Dump) in https://code.google.com/archive/p/word2vec/ . You can also contact me to get the word embedding files I used.
 
-  3.2 Run by importing this project into Eclipse
-  The code is organized by the Eclipse IDE. You should be able to import this project into Eclipse after you clone it. This make it more convenient to read and modify the code. If you want to run it from Eclipse, you need to pass the right parameters specified in Section 3.1 and run aNMM1.java or aNMM2.java to start the program.
+  ### Run by importing this project into Eclipse
+  The code is organized by the Eclipse IDE. You should be able to import this project into Eclipse after you clone it. This make it more convenient to read and modify the code. If you want to run it from Eclipse, you need to pass the right parameters and run aNMM1.java or aNMM2.java to start the program.
 
-4. Sample output
+# Sample output
 
-Sample output of aNMM-1
+### Sample output of aNMM-1
 ```
 a
 ```
 
-Sample output of aNMM-2
+###　Sample output of aNMM-2
 ```
 b
 ```
