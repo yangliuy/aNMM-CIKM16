@@ -183,8 +183,8 @@ You can compute MRR/MAP metrics with the qrel file and model score files under d
 # Download the TREC QA Data
 You can download the TREC QA data from http://www.aclweb.org/aclwiki/index.php?title=Question_Answering_(State_of_the_art) .
 
-This ACL Wiki page also contains the state of the art methods for questions answering with TREC QA data, which could be baselines in your future research.
+This ACL Wiki page also contains the state of the art methods for question answering with TREC QA data, which could be baselines in your future research.
 
 # Change Logs
-- Will add implementation with Python/Tensorflow later. 
+- Will add the implementation with Python/Tensorflow later. 
 
