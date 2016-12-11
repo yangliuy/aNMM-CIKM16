@@ -17,7 +17,7 @@ lyang@cs.umass.edu * */
 
 #Introduction
 
-1. An alternative to question answering methods based on feature engineering, deep learning approaches such as convolutional neural networks (CNNs) and Long Short-Term Memory Models (LSTMs) have recently been proposed for semantic matching of questions and answers. To achieve good results, however, these models have been combined with additional features such as word overlap or BM25 scores. Without this combination, these models perform significantly worse than methods based on linguistic feature engineering. In this paper, we propose an attention based neural matching model for ranking short answer text. We adopt value-shared weighting scheme instead of position-shared weighting scheme for combining different matching signals and incorporate question term importance learning using question attention network. Using the popular benchmark TREC QA data, we show that the relatively simple aNMM model can significantly outperform other neural network models that have been used for the question answering task, and is competitive with models that are combined with additional features. When aNMM is combined with additional features, it outperforms all baselines.
+1. As an alternative to question answering methods based on feature engineering, deep learning approaches such as convolutional neural networks (CNNs) and Long Short-Term Memory Models (LSTMs) have recently been proposed for semantic matching of questions and answers. To achieve good results, however, these models have been combined with additional features such as word overlap or BM25 scores. Without this combination, these models perform significantly worse than methods based on linguistic feature engineering. In this paper, we propose an attention based neural matching model for ranking short answer text. We adopt value-shared weighting scheme instead of position-shared weighting scheme for combining different matching signals and incorporate question term importance learning using question attention network. Using the popular benchmark TREC QA data, we show that the relatively simple aNMM model can significantly outperform other neural network models that have been used for the question answering task, and is competitive with models that are combined with additional features. When aNMM is combined with additional features, it outperforms all baselines.
 
 2. This package implements the aNMM-1 and aNMM-2 model proposed in this paper:Liu Yang, Qingyao Ai, Jiafeng Guo, W. Bruce Croft, aNMM: Ranking Short Answer Texts with Attention-Based Neural Matching Model, In Proceedings of the 25th ACM International Conference on Information and Knowledge Management (CIKM 2016). (https://ciir-publications.cs.umass.edu/pub/web/getpdf.php?id=1240 or http://dl.acm.org/citation.cfm?id=2983818). If you use this code, please cite this paper.
 
@@ -40,20 +40,20 @@ lyang@cs.umass.edu * */
 - vectorDimen: number of word vector dimensions in the pre-trained word embedding.
 - runModelType:
 
-	Validation-- In this run type, the test data is validFile. We want to tune hyper-parameters with the validFile.
+Validation-- In this run type, the test data is validFile. We want to tune hyper-parameters with the validFile.
 	
-  	Testing-- In this run type, the test data is testFile. We want to do prediction on testFile with the optimal parameters learned on validFile.
+Testing-- In this run type, the test data is testFile. We want to do prediction on testFile with the optimal parameters learned on validFile.
  
 Sample parameters:
   ```
-  	For aNMM1:
-	java -jar aNMM1.jar data/TRECQA/ModelInputData/trecqa.queries data/TRECQA/ModelInputData/train-less-than-40.manual-edit.qsent data/TRECQA/ModelInputData/dev-less-than-40.manual-edit.qsent data/TRECQA/ModelInputData/test-less-than-40.manual-edit.qsent data/TRECQA/WordVec/wiki_skipgram_win5_dim200.vec data/TRECQA/ModelRes/output_v41_anmm1/ TRECQA V4-1 600 200 Validation
+For aNMM1:
+java -jar aNMM1.jar data/TRECQA/ModelInputData/trecqa.queries data/TRECQA/ModelInputData/train-less-than-40.manual-edit.qsent data/TRECQA/ModelInputData/dev-less-than-40.manual-edit.qsent data/TRECQA/ModelInputData/test-less-than-40.manual-edit.qsent data/TRECQA/WordVec/wiki_skipgram_win5_dim200.vec data/TRECQA/ModelRes/output_v41_anmm1/ TRECQA V4-1 600 200 Validation
 	
-	For aNMM2:
-	java -jar aNMM2.jar data/TRECQA/ModelInputData/trecqa.queries data/TRECQA/ModelInputData/train-less-than-40.manual-edit.qsent data/TRECQA/ModelInputData/dev-less-than-40.manual-edit.qsent data/TRECQA/ModelInputData/test-less-than-40.manual-edit.qsent data/TRECQA/WordVec/wiki_skipgram_win5_dim200.vec data/TRECQA/ModelRes/output_v51_anmm2/ TRECQA V5-1 200 200 Validation
+For aNMM2:
+java -jar aNMM2.jar data/TRECQA/ModelInputData/trecqa.queries data/TRECQA/ModelInputData/train-less-than-40.manual-edit.qsent data/TRECQA/ModelInputData/dev-less-than-40.manual-edit.qsent data/TRECQA/ModelInputData/test-less-than-40.manual-edit.qsent data/TRECQA/WordVec/wiki_skipgram_win5_dim200.vec data/TRECQA/ModelRes/output_v51_anmm2/ TRECQA V5-1 200 200 Validation
   ```
 
-Note that you can find most of the input files under data/TRECQA/ModelInputData/. The pre-trained word embedding files are too large to be uploaded to Github (max file limit = 100 MB). You can generate the word embedding files by yourself using the tool and data (Wiki Dump) in https://code.google.com/archive/p/word2vec/ . You can also contact me to get the word embedding files I used.
+Note that you can find most of the input files under data/TRECQA/ModelInputData/. The pre-trained word embedding files are too large to be uploaded to Github (max file limit = 100 MB). You can generate the word embedding files by yourself using the tool and data (Wiki Dump) in https://code.google.com/archive/p/word2vec/ or use the [Glove embedding](http://nlp.stanford.edu/projects/glove/). You can also contact me to get the word embedding files I used.
 
 ###　Run by importing this project into Eclipse
 
@@ -80,49 +80,7 @@ Test2 Time: 2016-12-09 15:07:34
 Finish batch 1, update model parameters
 Finish batch 2, update model parameters
 Finish batch 3, update model parameters
-Finish batch 4, update model parameters
-Finish batch 5, update model parameters
-Finish batch 6, update model parameters
-Finish batch 7, update model parameters
-Finish batch 8, update model parameters
-Finish batch 9, update model parameters
-Finish batch 10, update model parameters
-Finish batch 11, update model parameters
-Finish batch 12, update model parameters
-Finish batch 13, update model parameters
-Finish batch 14, update model parameters
-Finish batch 15, update model parameters
-Finish batch 16, update model parameters
-Finish batch 17, update model parameters
-Finish batch 18, update model parameters
-Finish batch 19, update model parameters
-Finish batch 20, update model parameters
-Finish batch 21, update model parameters
-Finish batch 22, update model parameters
-Finish batch 23, update model parameters
-Finish batch 24, update model parameters
-Finish batch 25, update model parameters
-Finish batch 26, update model parameters
-Finish batch 27, update model parameters
-Finish batch 28, update model parameters
-Finish batch 29, update model parameters
-Finish batch 30, update model parameters
-Finish batch 31, update model parameters
-Finish batch 32, update model parameters
-Finish batch 33, update model parameters
-Finish batch 34, update model parameters
-Finish batch 35, update model parameters
-Finish batch 36, update model parameters
-Finish batch 37, update model parameters
-Finish batch 38, update model parameters
-Finish batch 39, update model parameters
-Finish batch 40, update model parameters
-Finish batch 41, update model parameters
-Finish batch 42, update model parameters
-Finish batch 43, update model parameters
-Finish batch 44, update model parameters
-Finish batch 45, update model parameters
-Finish batch 46, update model parameters
+......
 Finish batch 47, update model parameters
 Finish the last batch, update model parameters
 Finish one Epoch!
@@ -136,49 +94,7 @@ Test2 Time: 2016-12-09 15:10:22
 Finish batch 1, update model parameters
 Finish batch 2, update model parameters
 Finish batch 3, update model parameters
-Finish batch 4, update model parameters
-Finish batch 5, update model parameters
-Finish batch 6, update model parameters
-Finish batch 7, update model parameters
-Finish batch 8, update model parameters
-Finish batch 9, update model parameters
-Finish batch 10, update model parameters
-Finish batch 11, update model parameters
-Finish batch 12, update model parameters
-Finish batch 13, update model parameters
-Finish batch 14, update model parameters
-Finish batch 15, update model parameters
-Finish batch 16, update model parameters
-Finish batch 17, update model parameters
-Finish batch 18, update model parameters
-Finish batch 19, update model parameters
-Finish batch 20, update model parameters
-Finish batch 21, update model parameters
-Finish batch 22, update model parameters
-Finish batch 23, update model parameters
-Finish batch 24, update model parameters
-Finish batch 25, update model parameters
-Finish batch 26, update model parameters
-Finish batch 27, update model parameters
-Finish batch 28, update model parameters
-Finish batch 29, update model parameters
-Finish batch 30, update model parameters
-Finish batch 31, update model parameters
-Finish batch 32, update model parameters
-Finish batch 33, update model parameters
-Finish batch 34, update model parameters
-Finish batch 35, update model parameters
-Finish batch 36, update model parameters
-Finish batch 37, update model parameters
-Finish batch 38, update model parameters
-Finish batch 39, update model parameters
-Finish batch 40, update model parameters
-Finish batch 41, update model parameters
-Finish batch 42, update model parameters
-Finish batch 43, update model parameters
-Finish batch 44, update model parameters
-Finish batch 45, update model parameters
-Finish batch 46, update model parameters
+......
 Finish batch 47, update model parameters
 Finish the last batch, update model parameters
 Finish one Epoch!
@@ -192,9 +108,6 @@ Test2 Time: 2016-12-09 15:13:01
 Finish batch 1, update model parameters
 Finish batch 2, update model parameters
 Finish batch 3, update model parameters
-Finish batch 4, update model parameters
-Finish batch 5, update model parameters
-Finish batch 6, update model parameters
 ...
 ```
 
@@ -222,94 +135,7 @@ Test3 Time when finished one batch: 2016-12-09 15:25:38
 Finish batch 2, update model parameters
 Test3 Time when finished one batch: 2016-12-09 15:25:47
 Finish batch 3, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:25:56
-Finish batch 4, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:26:03
-Finish batch 5, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:26:12
-Finish batch 6, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:26:20
-Finish batch 7, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:26:27
-Finish batch 8, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:26:33
-Finish batch 9, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:26:40
-Finish batch 10, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:26:47
-Finish batch 11, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:26:57
-Finish batch 12, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:27:04
-Finish batch 13, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:27:10
-Finish batch 14, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:27:18
-Finish batch 15, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:27:25
-Finish batch 16, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:27:32
-Finish batch 17, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:27:39
-Finish batch 18, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:27:47
-Finish batch 19, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:27:56
-Finish batch 20, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:28:05
-Finish batch 21, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:28:13
-Finish batch 22, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:28:20
-Finish batch 23, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:28:28
-Finish batch 24, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:28:37
-Finish batch 25, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:28:44
-Finish batch 26, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:28:51
-Finish batch 27, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:28:59
-Finish batch 28, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:29:07
-Finish batch 29, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:29:13
-Finish batch 30, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:29:18
-Finish batch 31, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:29:26
-Finish batch 32, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:29:32
-Finish batch 33, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:29:39
-Finish batch 34, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:29:49
-Finish batch 35, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:29:55
-Finish batch 36, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:30:03
-Finish batch 37, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:30:10
-Finish batch 38, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:30:18
-Finish batch 39, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:30:26
-Finish batch 40, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:30:34
-Finish batch 41, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:30:42
-Finish batch 42, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:30:49
-Finish batch 43, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:30:57
-Finish batch 44, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:31:02
-Finish batch 45, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:31:08
-Finish batch 46, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:31:15
-Finish batch 47, update model parameters
+......
 Test3 Time when finished one batch: 2016-12-09 15:31:23
 Finish last batch, update model parameters
 Test3 Time when finished one batch: 2016-12-09 15:31:29
@@ -326,93 +152,7 @@ Test3 Time when finished one batch: 2016-12-09 15:31:44
 Finish batch 2, update model parameters
 Test3 Time when finished one batch: 2016-12-09 15:31:54
 Finish batch 3, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:32:02
-Finish batch 4, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:32:10
-Finish batch 5, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:32:18
-Finish batch 6, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:32:26
-Finish batch 7, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:32:34
-Finish batch 8, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:32:40
-Finish batch 9, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:32:46
-Finish batch 10, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:32:56
-Finish batch 11, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:33:05
-Finish batch 12, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:33:13
-Finish batch 13, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:33:19
-Finish batch 14, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:33:27
-Finish batch 15, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:33:34
-Finish batch 16, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:33:41
-Finish batch 17, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:33:48
-Finish batch 18, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:33:54
-Finish batch 19, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:34:03
-Finish batch 20, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:34:12
-Finish batch 21, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:34:20
-Finish batch 22, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:34:28
-Finish batch 23, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:34:35
-Finish batch 24, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:34:44
-Finish batch 25, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:34:51
-Finish batch 26, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:34:58
-Finish batch 27, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:35:06
-Finish batch 28, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:35:13
-Finish batch 29, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:35:19
-Finish batch 30, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:35:25
-Finish batch 31, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:35:33
-Finish batch 32, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:35:38
-Finish batch 33, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:35:46
-Finish batch 34, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:35:55
-Finish batch 35, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:36:01
-Finish batch 36, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:36:09
-Finish batch 37, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:36:16
-Finish batch 38, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:36:23
-Finish batch 39, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:36:32
-Finish batch 40, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:36:40
-Finish batch 41, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:36:48
-Finish batch 42, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:36:55
-Finish batch 43, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:37:02
-Finish batch 44, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:37:08
-Finish batch 45, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:37:13
-Finish batch 46, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:37:21
+......
 Finish batch 47, update model parameters
 Test3 Time when finished one batch: 2016-12-09 15:37:29
 Finish last batch, update model parameters
@@ -431,28 +171,8 @@ Finish batch 2, update model parameters
 Test3 Time when finished one batch: 2016-12-09 15:37:59
 Finish batch 3, update model parameters
 Test3 Time when finished one batch: 2016-12-09 15:38:08
-Finish batch 4, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:38:16
-Finish batch 5, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:38:24
-Finish batch 6, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:38:32
-Finish batch 7, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:38:39
-Finish batch 8, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:38:46
-Finish batch 9, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:38:52
-Finish batch 10, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:38:59
-Finish batch 11, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:39:08
-Finish batch 12, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:39:16
-Finish batch 13, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:39:22
-...
-```
+......
 
-
+# Change Logs
+- Will add implementation with Python/Tensorflow later. 
 
