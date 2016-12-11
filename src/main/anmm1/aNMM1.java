@@ -20,8 +20,8 @@ import main.core.QADocuments;
  * Step2: Pair-wise training to learning optimal weights
  * 
  * Version update logs:
- * //V0 No gate
- * //V1 HasGate Sigmoid
+  	//V0 No gate
+  	//V1 HasGate Sigmoid
 	//V2 HasGateMQbar Sigmoid
 	//V3-2 BinWeight & Has Gate Sigmoid
 	//V3-3 BinWeight & HasGateMQbar Sigmoid
