@@ -1,6 +1,6 @@
 # aNMM-CIKM16
 
-#Implementation of Attention-Based Neural Matching Model Proposed in CIKM16 for Answer Sentence Selection
+# Implementation of Attention-Based Neural Matching Model Proposed in CIKM16 for Answer Sentence Selection
 =========================================================================================================
 
 /**
@@ -15,7 +15,7 @@ Liu Yang, Qingyao Ai, Jiafeng Guo, W. Bruce Croft, aNMM: Ranking Short Answer Te
 Feel free to contact the following people if you find any problems in the package.
 lyang@cs.umass.edu * */
 
-#Introduction
+# Introduction
 
 1. As an alternative to question answering methods based on feature engineering, deep learning approaches such as convolutional neural networks (CNNs) and Long Short-Term Memory Models (LSTMs) have recently been proposed for semantic matching of questions and answers. To achieve good results, however, these models have been combined with additional features such as word overlap or BM25 scores. Without this combination, these models perform significantly worse than methods based on linguistic feature engineering. In this paper, we propose an attention based neural matching model for ranking short answer text. We adopt value-shared weighting scheme instead of position-shared weighting scheme for combining different matching signals and incorporate question term importance learning using question attention network. Using the popular benchmark TREC QA data, we show that the relatively simple aNMM model can significantly outperform other neural network models that have been used for the question answering task, and is competitive with models that are combined with additional features. When aNMM is combined with additional features, it outperforms all baselines.
 
@@ -59,7 +59,7 @@ java -jar aNMM2.jar data/TRECQA/ModelInputData/trecqa.queries data/TRECQA/ModelI
 
 Note that you can find most of the input files under data/TRECQA/ModelInputData/. The pre-trained word embedding files are too large to be uploaded to Github (max file limit = 100 MB). You can generate the word embedding files by yourself using the tool and data (Wiki Dump) in https://code.google.com/archive/p/word2vec/ or use the [Glove embedding](http://nlp.stanford.edu/projects/glove/). You can also contact me to get the word embedding files I used.
 
-###Run by importing this project into Eclipse
+### Run by importing this project into Eclipse
 
 The code is organized by the Eclipse IDE. You should be able to import this project into Eclipse after you clone it. This makes it more convenient to read and modify the code. If you want to run it from Eclipse, you need to pass the right parameters specified in Section "Run with Jar files" and run aNMM1.java or aNMM2.java to start the program.
 
