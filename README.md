@@ -114,7 +114,7 @@ Finish batch 3, update model parameters
 ...
 ```
 
-###　Sample output of aNMM-2
+### Sample output of aNMM-2
 ```
 runModelType: Validation
 termToWordVectorMap size: 218317
