@@ -1,7 +1,6 @@
 # aNMM-CIKM16
 
 # Implementation of Attention-Based Neural Matching Model Proposed in CIKM16 for Answer Sentence Selection
-=========================================================================================================
 
 /**
 Copyright (C) 2016 by Center for Intelligent Information Retrieval / University of Massachusetts Amherst
