@@ -184,9 +184,6 @@ You can download the TREC QA data from http://www.aclweb.org/aclwiki/index.php?t
 
 This ACL Wiki page also contains the state of the art methods for question answering with TREC QA data, which could be baselines in your future research.
 
-# Change Logs
-- Will add the implementation with Python/Tensorflow later. 
-
 # FAQ
 ### Q1:Is it possible for you to share the embeddings you have used in your experiments?
 A1:  You can download the 200 dimensional word embedding I used in my experiments from here:
@@ -194,5 +191,8 @@ A1:  You can download the 200 dimensional word embedding I used in my experiment
 https://drive.google.com/file/d/0B8N4GAk1fdLEc0Npd2wzdkVYaEk/view?usp=sharing
 
 For the other embedding files in 300, 500, 700, 900 dimensions, they are too big to be uploaded to my Google Drive. (total > 5 G) . So I suggest you to use the 200 dimensional word embedding file to start your experiments and then you can try other embedding files from https://code.google.com/archive/p/word2vec/ or https://nlp.stanford.edu/projects/glove/ . You can use different kinds of pre-trained word embeddings for aNMM as long as you explain your setting clearly in your paper or report.
+
+# Change Logs
+- Will add the implementation with Python/Tensorflow later. 
 
 
