@@ -188,7 +188,7 @@ This ACL Wiki page also contains the state of the art methods for question answe
 - Will add the implementation with Python/Tensorflow later. 
 
 # FAQ
-### Q1:Is it possible for you to you share the embeddings you have used in your experiments?
+### Q1:Is it possible for you to share the embeddings you have used in your experiments?
 A1:  You can download the 200 dimensional word embedding I used in my experiments from here:
 
 https://drive.google.com/file/d/0B8N4GAk1fdLEc0Npd2wzdkVYaEk/view?usp=sharing
