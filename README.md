@@ -180,7 +180,7 @@ Test3 Time when finished one batch: 2016-12-09 15:38:08
 You can compute MRR/MAP metrics with the qrel file and model score files under data/ModelRes folder with [trec_eval](http://trec.nist.gov/trec_eval/) tool. The program can generate the qrel file based on the annotations in TREC QA data for you.
 
 # Download the TREC QA Data
-You can download the TREC QA data from http://www.aclweb.org/aclwiki/index.php?title=Question_Answering_(State_of_the_art) .
+You can download the TREC QA data from [ACL Wiki on Question Answering](https://aclweb.org/aclwiki/Question_Answering_(State_of_the_art)).
 
 This ACL Wiki page also contains the state of the art methods for question answering with TREC QA data, which could be baselines in your future research.
 
