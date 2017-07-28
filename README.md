@@ -64,8 +64,8 @@ The code is organized by the Eclipse IDE. You should be able to import this proj
 
 # Sample output
 
-### Sample output of aNMM-1
 ```
+### Sample output of aNMM-1
 create path : data/TRECQA/ModelRes/output_v41_anmm1/
 runModelType: Validation
 termToWordVectorMap size: 218317
@@ -89,33 +89,9 @@ Finish the last batch, update model parameters
 Finish one Epoch!
 After scan all the triples, wkChangeSumSquare = 299.6152736347496
 After scan all the triples, vpChangeSumSquare = 156.93927404087347
-Iteration/Epoch 2
-Test1 Time: 2016-12-09 15:10:20
-Current loss on training data: 17977.519661668553
-Current loss on validation/dev data: 3637.728969222303
-Test2 Time: 2016-12-09 15:10:22
-Finish batch 1, update model parameters
-Finish batch 2, update model parameters
-Finish batch 3, update model parameters
 ......
-Finish batch 47, update model parameters
-Finish the last batch, update model parameters
-Finish one Epoch!
-After scan all the triples, wkChangeSumSquare = 35.23044274864642
-After scan all the triples, vpChangeSumSquare = 44.33977586672522
-Iteration/Epoch 3
-Test1 Time: 2016-12-09 15:13:00
-Current loss on training data: 14421.003022897045
-Current loss on validation/dev data: 3624.0323821569414
-Test2 Time: 2016-12-09 15:13:01
-Finish batch 1, update model parameters
-Finish batch 2, update model parameters
-Finish batch 3, update model parameters
-...
-```
 
 ### Sample output of aNMM-2
-```
 runModelType: Validation
 termToWordVectorMap size: 218317
 current read doc: data/TRECQA/ModelInputData/train-less-than-40.manual-edit.qsent
@@ -145,37 +121,9 @@ Test3 Time when finished one batch: 2016-12-09 15:31:29
 After scan all the triples, wtkChangeSumSquare = 40.352836438789964
 After scan all the triples, rtChangeSumSquare = 35.846697560864406
 After scan all the triples, vpChangeSumSquare = 18.72115474157675
-Iteration/Epoch 2
-Test1 Time: 2016-12-09 15:31:29
-Current loss on training data: 47770.88122559699
-Current loss on validation/dev data: 4389.849432405724
-Test2 Time: 2016-12-09 15:31:36
-Finish batch 1, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:31:44
-Finish batch 2, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:31:54
-Finish batch 3, update model parameters
-......
-Finish batch 47, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:37:29
-Finish last batch, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:37:34
-After scan all the triples, wtkChangeSumSquare = 105.8038931047181
-After scan all the triples, rtChangeSumSquare = 158.39176885396574
-After scan all the triples, vpChangeSumSquare = 74.08961405417756
-Iteration/Epoch 3
-Test1 Time: 2016-12-09 15:37:34
-Current loss on training data: 17726.786863048106
-Current loss on validation/dev data: 3576.849487041899
-Test2 Time: 2016-12-09 15:37:41
-Finish batch 1, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:37:50
-Finish batch 2, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:37:59
-Finish batch 3, update model parameters
-Test3 Time when finished one batch: 2016-12-09 15:38:08
 ......
 ```
+
 # Compute MRR/MAP Metrics
 You can compute MRR/MAP metrics with the qrel file and model score files under data/ModelRes folder with [trec_eval](http://trec.nist.gov/trec_eval/) tool. The program can generate the qrel file based on the annotations in TREC QA data for you.
 
