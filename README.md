@@ -141,6 +141,7 @@ https://drive.google.com/file/d/0B8N4GAk1fdLEc0Npd2wzdkVYaEk/view?usp=sharing
 For the other embedding files in 300, 500, 700, 900 dimensions, they are too big to be uploaded to my Google Drive. (total > 5 G) . So I suggest you to use the 200 dimensional word embedding file to start your experiments and then you can try other embedding files from https://code.google.com/archive/p/word2vec/ or https://nlp.stanford.edu/projects/glove/ . You can use different kinds of pre-trained word embeddings for aNMM as long as you explain your setting clearly in your paper or report.
 
 # Change Logs
-- Will add the implementation with Python/Tensorflow later. 
+- Will add the implementation with Python/Tensorflow/Keras later. 
+- The implementation of aNMM using Python/Tensorflow/Keras will be based on MatchZoo toolkit (https://github.com/faneshion/MatchZoo). You can take a look at this deep text matching toolkit to see the implementations of popular deep text matching models such as ARC-I/ARC-II, DSSM, CDSSM, MatchPyramid, MS-LSTM, DRMM, etc. We will add more deep text matching models into it. Stay tuned.
 
 
