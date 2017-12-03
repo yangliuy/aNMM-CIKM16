@@ -14,7 +14,7 @@ Liu Yang, Qingyao Ai, Jiafeng Guo, W. Bruce Croft, aNMM: Ranking Short Answer Te
 Feel free to contact the following people if you find any problems in the package.
 lyang@cs.umass.edu 
 
-Update in 12/02/2017: The Tensorflow based implementation in Python for aNMM is relased in the MatchZoo toolkit (https://github.com/faneshion/MatchZoo) * */
+Update in 12/02/2017: The Tensorflow based implementation in Python for aNMM is released in the MatchZoo toolkit (https://github.com/faneshion/MatchZoo) * */
 
 # Introduction
 
@@ -27,7 +27,7 @@ Update in 12/02/2017: The Tensorflow based implementation in Python for aNMM is 
 	If you use this code, please cite this paper.
 	
 	
-3. The Tensorflow based implementation in Python for aNMM is relased in the MatchZoo toolkit (https://github.com/faneshion/MatchZoo).
+3. The Tensorflow based implementation in Python for aNMM is released in the MatchZoo toolkit (https://github.com/faneshion/MatchZoo).
 
 # How to run
 
