@@ -12,7 +12,9 @@ More details can be found in the following paper:
 Liu Yang, Qingyao Ai, Jiafeng Guo, W. Bruce Croft, aNMM: Ranking Short Answer Texts with Attention-Based Neural Matching Model, In Proceedings of the 25th ACM International Conference on Information and Knowledge Management (CIKM 2016), Indianapolis, IN, USA. October 24-28, 2016. Full Paper. (https://ciir-publications.cs.umass.edu/pub/web/getpdf.php?id=1240 or http://dl.acm.org/citation.cfm?id=2983818)
 
 Feel free to contact the following people if you find any problems in the package.
-lyang@cs.umass.edu * */
+lyang@cs.umass.edu 
+Update in 12/02/2017: The Tensorflow based implementation in Python for aNMM is relased in the MatchZoo toolkit (https://github.com/faneshion/MatchZoo).
+* */
 
 # Introduction
 
@@ -23,6 +25,8 @@ lyang@cs.umass.edu * */
 	Liu Yang, Qingyao Ai, Jiafeng Guo, W. Bruce Croft, aNMM: Ranking Short Answer Texts with Attention-Based Neural Matching Model, In Proceedings of the 25th ACM International Conference on Information and Knowledge Management (CIKM 2016). (https://ciir-publications.cs.umass.edu/pub/web/getpdf.php?id=1240 or http://dl.acm.org/citation.cfm?id=2983818). 
 
 	If you use this code, please cite this paper.
+	
+3. The Tensorflow based implementation in Python for aNMM is relased in the MatchZoo toolkit (https://github.com/faneshion/MatchZoo).
 
 # How to run
 
@@ -141,7 +145,6 @@ https://drive.google.com/file/d/0B8N4GAk1fdLEc0Npd2wzdkVYaEk/view?usp=sharing
 For the other embedding files in 300, 500, 700, 900 dimensions, they are too big to be uploaded to my Google Drive. (total > 5 G) . So I suggest you to use the 200 dimensional word embedding file to start your experiments and then you can try other embedding files from https://code.google.com/archive/p/word2vec/ or https://nlp.stanford.edu/projects/glove/ . You can use different kinds of pre-trained word embeddings for aNMM as long as you explain your setting clearly in your paper or report.
 
 # Change Logs
-- Will add the implementation with Python/Tensorflow/Keras later. 
-- The implementation of aNMM using Python/Tensorflow/Keras will be based on MatchZoo toolkit (https://github.com/faneshion/MatchZoo). You can take a look at this deep text matching toolkit to see the implementations of popular deep text matching models such as ARC-I/ARC-II, DSSM, CDSSM, MatchPyramid, MS-LSTM, DRMM, etc. We will add more deep text matching models into it. Stay tuned.
+- The implementation of aNMM using Python/Tensorflow/Keras has been released in the MatchZoo toolkit (https://github.com/faneshion/MatchZoo). You can take a look at this deep text matching toolkit to see the implementations of popular deep text matching models such as ARC-I/ARC-II, DSSM, CDSSM, MatchPyramid, MV-LSTM, DRMM, aNMM, Duet, etc. We will add more deep text matching models into it. Stay tuned.
 
 
