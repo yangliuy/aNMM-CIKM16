@@ -26,6 +26,7 @@ Update in 12/02/2017: The Tensorflow based implementation in Python for aNMM is 
 
 	If you use this code, please cite this paper.
 	
+	
 3. The Tensorflow based implementation in Python for aNMM is relased in the MatchZoo toolkit (https://github.com/faneshion/MatchZoo).
 
 # How to run
